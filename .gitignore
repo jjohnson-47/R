@@ -1,0 +1,120 @@
+# R specific
+.Rproj.user/
+.Rhistory
+.RData
+.RDataTmp
+.Ruserdata
+*.Rproj
+.Rapp.history
+
+# Project directories
+/**/data/*
+!/**/data/.gitkeep
+!/**/data/raw/.gitkeep
+!/**/data/processed/.gitkeep
+
+/**/output/*
+!/**/output/.gitkeep
+!/**/output/figures/.gitkeep
+!/**/output/tables/.gitkeep
+
+# renv specific
+renv/library/
+renv/local/
+renv/lock/
+renv/python/
+renv/staging/
+!renv.lock
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# Operating System
+.DS_Store
+Thumbs.db
+.directory
+
+# Temporary files
+*.swp
+*~
+*.tmp
+*.bak
+
+# R Markdown and Quarto
+*.html
+*.pdf
+*_cache/
+*_files/
+_site/
+_book/
+_freeze/
+/*.html
+/*_files/
+/*_cache/
+.quarto/
+
+# R Environment Variables
+.Renviron
+.env
+!.env.template
+
+# Data files
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.rds
+*.rda
+*.RData
+*.feather
+*.parquet
+*.arrow
+*.fst
+*.dta
+*.sav
+*.sas7bdat
+
+# Large files and binaries
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.ico
+
+# Logs and temporary files
+*.log
+logs/
+temp/
+tmp/
+
+# Documentation build
+docs/_build/
+docs/auto/
+
+# Package specific
+*.o
+*.so
+*.dll
+
+# DVC specific (if using Data Version Control)
+/dvc.lock
+/dvc.yaml
+.dvc/cache
+.dvc/tmp
+.dvc/plots
+
+# Project specific
+/projects/**/cache/
+/projects/**/figures/
+/projects/**/results/

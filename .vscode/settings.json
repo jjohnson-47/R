@@ -1,0 +1,210 @@
+{
+  // R Language Server Configuration
+  "r.lsp.enabled": true,
+  "r.lsp.debug": false,
+  "r.lsp.diagnostics": true,
+  "r.bracketedPaste": true,
+  "r.rterm.option": [
+    "--no-save",
+    "--no-restore",
+    "--quiet"
+  ],
+
+  // R Linting Configuration
+  "r.linting.enable": true,
+  "r.linting.path": "${workspaceFolder}/config/R/.lintr.R", // Ensure this matches your project structure
+  "r.linting.run": "onType",
+  "r.linting.timer": 1000,
+
+  // R Path and Environment
+  "r.rterm.linux": "/usr/bin/R",
+  "r.rpath.linux": "/usr/bin/R",
+  "r.alwaysUseActiveTerminal": true,
+  "r.sessionWatcher": true,
+  "r.workspaceViewer.showObjects": true,
+  "r.plot.useHttpgd": true,
+
+  // R Package Development
+  "r.buildType": "source",
+  "r.package.useDevtools": true,
+  "r.package.installArgs": ["--no-multiarch", "--with-keep.source"],
+  "r.package.roxygenize": ["rd", "collate", "namespace"],
+
+  // R Markdown and Quarto
+  "r.rmarkdown.knit.useBackground": false,
+  "r.rmarkdown.enableCodeLens": true,
+  "r.markdown.wrap": "column",
+  "r.markdown.wrapColumn": 80,
+  "r.markdown.references": "document",
+  "r.markdown.canonical": true,
+
+  // Code Style and Formatting
+  "r.formatting.style": {
+    "indentSize": 2,
+    "spaceAfterComma": true,
+    "spaceAroundOperators": true,
+    "spaceBeforeBracket": true,
+    "alwaysUseBrackets": true,
+    "keepComments": true
+  },
+
+  // Editor Settings
+  "editor.wordWrapColumn": 80,
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.rulers": [80],
+  "editor.renderWhitespace": "boundary",
+  "editor.suggestSelection": "first",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.codeFolding": true,
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.showUnused": true,
+  "problems.decorations.enabled": true,
+
+  // Files Configuration
+  "files.encoding": "utf8",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "files.eol": "\n",
+  "files.associations": {
+    "*.Rmd": "rmd",
+    "*.qmd": "quarto",
+    "*.R": "r",
+    "*.Rproj": "r",
+    "*.Renviron": "dotenv",
+    "*.Rprofile": "r",
+    "*/.lintr": "r"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.DS_Store": true,
+    "**/*.o": true,
+    "**/*.so": true
+  },
+
+  // Terminal Configuration
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+
+  // Git Configuration
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "gitlens.codeLens.enabled": true,
+
+  // Workspace Configuration
+  "workbench.editor.labelFormat": "medium",
+  "workbench.editor.restoreViewState": true,
+  "workbench.colorCustomizations": {
+    "editorError.foreground": "#ff0000",
+    "editorWarning.foreground": "#ff8800",
+    "editorInfo.foreground": "#00ff00"
+  },
+
+  // Language-specific settings
+  "[r]": {
+    "editor.defaultFormatter": "REditorSupport.r",
+    "editor.formatOnSave": true,
+    "editor.wordSeparators": "`~!@#%$^&*()-=+[{]}\\|;:'\",.<>/?",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.r": "explicit"
+    }
+  },
+  "[rmd]": {
+    "editor.defaultFormatter": "REditorSupport.r",
+    "editor.formatOnSave": true
+  },
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always"
+    }
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.formatOnSave": true
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": null,
+    "editor.formatOnSave": true
+  },
+
+  // Spell Checker Configuration
+  "cSpell.language": "en",
+  "cSpell.words": [
+    "dplyr",
+    "ggplot",
+    "knitr",
+    "renv",
+    "testthat",
+    "tidyr",
+    "tidyverse",
+    "Rscript",
+    "devel",
+    "libgit",
+    "pacman",
+    "usethis",
+    "dotenv",
+    "Rproj",
+    "Ruserdata",
+    "Renviron",
+    "rterm",
+    "Httpgd",
+    "dtplyr",
+    "lubridate",
+    "forcats",
+    "tidymodels",
+    "glmnet",
+    "xgboost",
+    "plotly",
+    "viridis",
+    "gganimate",
+    "ggrepel",
+    "corrplot",
+    "rayshader",
+    "rmarkdown",
+    "shinydashboard",
+    "roxygen",
+    "profvis",
+    "readxl",
+    "jsonlite",
+    "openxlsx",
+    "SPSS",
+    "Stata",
+    "httr",
+    "renv",
+    "testthat",
+    "xgboost",
+    "rmarkdown",
+    "shinydashboard",
+    "lintr",
+    "rstudioapi",
+    "winslash",
+    "envir",
+    "cyclocomp",
+    "funs",
+    "Rapp",
+    "readr",
+    "stringr",
+    "CRAN",
+    "bdat"
+  ],
+
+  // Live Share Configuration
+  "liveshare.authenticationProvider": "GitHub",
+  "liveshare.presence": true,
+
+  // DVC Configuration
+  "dvc.dvcPath": "dvc",
+
+  // Project-specific settings that can be overridden in workspace settings
+  "r.libPaths": [],
+  "r.packageFolders": []
+}

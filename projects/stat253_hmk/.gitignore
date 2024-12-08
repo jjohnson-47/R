@@ -1,0 +1,16 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+*.Rapp.history
+data/*
+!data/.gitkeep
+output/*
+!output/.gitkeep
+.DS_Store
+Thumbs.db
+*.swp
+*~
+*.tmp
+*.bak
